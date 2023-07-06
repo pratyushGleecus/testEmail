@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="image.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,7 +18,6 @@
             emailjs.init(publicKey);
         })();
     </script>
-    <script src="script.js"></script>
 
 
 </head>
@@ -33,6 +33,28 @@
         <i class="fa-sharp fa-regular fa-square iconSq" id="squareIcon"></i>
         <button id="mode" onclick="darkMode()">color change</button>
     </div>
+
+
+    <div id="container">
+        <div id="slider-container">
+            <span onclick="slideRight()" class="btn"></span>
+            <div id="slider">
+                <div class="slide"><span>1</span></div>
+                <div class="slide"><span>2</span></div>
+                <div class="slide"><span>3<span></div>
+                <div class="slide"><span>4</span></div>
+                <div class="slide"><span>5</span></div>
+                <div class="slide"><span>6</span></div>
+                <div class="slide"><span>7</span></div>
+                <div class="slide"><span>8</span></div>
+                <div class="slide"><span>9</span></div>
+                <div class="slide"><span>10</span></div>
+            </div>
+            <span onclick="slideLeft()" class="btn"></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
 </body>
 
 </html>
