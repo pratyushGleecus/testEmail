@@ -10,7 +10,8 @@
     </script>
     <script type="text/javascript">
         (function () {
-            emailjs.init("2uVF1qJWrEHDlLhLN");
+            var publicKey = "<%= process.env.PUBLIC_KEY %>";
+            emailjs.init(publicKey);
         })();
     </script>
     <script src="script.js"></script>
