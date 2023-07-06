@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
     <script type="text/javascript">
@@ -25,6 +28,10 @@
         <input type="email" name="email" id="email" placeholder="email">
         <textarea name="message" id="message" cols="30" rows="10" placeholder="message"></textarea>
         <button id="send" onclick="sendMail()">send</button>
+    </div>
+    <div class="icon">
+        <i class="fa-sharp fa-regular fa-square iconSq" id="squareIcon"></i>
+        <button id="mode" onclick="darkMode()">color change</button>
     </div>
 </body>
 
