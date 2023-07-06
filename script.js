@@ -1,4 +1,5 @@
 function sendMail() {
+    
     let params = {
         name: document.getElementById("name").value,
         email: document.getElementById("email").value,
@@ -6,8 +7,8 @@ function sendMail() {
 
     }
 
-    let serviceID = "service_u6n2byb"
-    let templateID = "template_rf46skg"
+    var serviceID = process.env.SERVICE_ID;
+    var templateID = process.env.TEMPLATE_ID;
 
     emailjs.send(serviceID, templateID, params)
         .then(function (response) {
